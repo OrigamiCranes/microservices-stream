@@ -27,4 +27,6 @@ def stream(epic):
 
     print(data_frame.dtypes)
     # export json
+
+    data_block = data_frame.to_json(orient='columns')
     return data_block
